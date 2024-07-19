@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1243.3333333333333,7580.666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1073.3333333333333,7580.666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -100,6 +100,12 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
   <Sequence DisplayName="Main sequence" sap:VirtualizedContainerService.HintSize="692,7516" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -112,7 +118,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,7068" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,7105.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -160,7 +166,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_6" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,341.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_6" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
               <uta:VerifyControlAttribute.ActivityToTest>
                 <ActivityAction>
                   <uix:NGetText DisplayName="Get Text 'Author'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
@@ -321,7 +327,7 @@
             <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_8" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
               <uta:VerifyControlAttribute.ActivityToTest>
                 <ActivityAction>
-                  <uix:NGetText DisplayName="Get Text 'filler'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                  <uix:NGetText DisplayName="Get Text 'label'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
                     <uix:NGetText.OutUiElement>
                       <OutArgument x:TypeArguments="ui:UiElement">
                         <VariableReference x:TypeArguments="ui:UiElement">
@@ -332,10 +338,10 @@
                       </OutArgument>
                     </uix:NGetText.OutUiElement>
                     <uix:NGetText.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="279, 44, 269, 16" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;java name='Select a coordinate system, and a format if needed:' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='label' /&gt;" Guid="01b461b2-f986-4dd5-8ac2-3129433f9334" InformativeScreenshot="789c69252d614c9f74d35e28b9a1e1bf.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable DesignTimeRectangle="269, 34, 539, 521" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java cls='PrefPanel' role='panel' /&gt;" FuzzySelectorArgument="&lt;java cls='PrefPanel' role='panel' /&gt;" Guid="450bf79f-01a0-4b4a-bb4b-64fd2c8bb19e" InformativeScreenshot="63cc53f4e3f71f6de371a85967ef3da9.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
                           <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                            <uix:Target DesignTimeRectangle="279, 236, 519, 309" FullSelectorArgument="&lt;java cls='Filler' idx='7' role='filler' /&gt;" FuzzySelectorArgument="&lt;java cls='Filler' role='filler' /&gt;" Guid="46213c8e-ea31-4c25-81ae-89843432c886" SearchSteps="Selector, FuzzySelector" />
+                            <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java idx='40' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='label' /&gt;" Guid="70e34d5c-57e5-41d0-afa8-cd91fc8481f1" SearchSteps="Selector, FuzzySelector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
@@ -569,9 +575,9 @@
                       </OutArgument>
                     </uix:NGetText.OutUiElement>
                     <uix:NGetText.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="269, 34, 539, 521" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java cls='PrefPanel' hasTableAncestor='0' idx='3' role='panel' /&gt;" FuzzySelectorArgument="&lt;java cls='PrefPanel' hasTableAncestor='0' role='panel' /&gt;" Guid="474f29ac-7387-467d-a3ff-31299cc4f0ef" InformativeScreenshot="5bc159f7dd76ee03b4323b109fe030d4.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable DesignTimeRectangle="269, 34, 539, 521" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java cls='PrefPanel' hasTableAncestor='0' idx='3' role='panel' /&gt;" FuzzySelectorArgument="&lt;java cls='PrefPanel' hasTableAncestor='0' role='panel' /&gt;" Guid="474f29ac-7387-467d-a3ff-31299cc4f0ef" InformativeScreenshot="a90d4ec5c0dc74370f28fb8955dcb2a9.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
                             <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="acfa225b-6e45-41b2-a20b-aede2e9018c5" SearchSteps="Selector, FuzzySelector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -648,10 +654,10 @@
                       </OutArgument>
                     </uix:NGetText.OutUiElement>
                     <uix:NGetText.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="269, 34, 539, 521" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java cls='DeveloperPreferencePanel' hasTableAncestor='0' role='panel' /&gt;" FuzzySelectorArgument="&lt;java cls='DeveloperPreferencePanel' hasTableAncestor='0' role='panel' /&gt;" Guid="358f994b-f8a6-478f-8ad3-6b3d960a2155" InformativeScreenshot="eecd3f6e24c997510ee4c65e91d487ac.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable DesignTimeRectangle="279, 44, 519, 93" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java name='Debug Settings' role='panel' /&gt;" FuzzySelectorArgument="&lt;java role='panel' /&gt;" Guid="501ac693-9d64-4541-8d8d-22e1cfcac720" InformativeScreenshot="f68c5cb09017d33fc2c894a6abae49c2.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
                           <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                            <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='706' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="108c649e-156d-4b7a-952e-b63f428a3179" SearchSteps="Selector, FuzzySelector" />
+                            <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java idx='48' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='label' /&gt;" Guid="1b001d4f-7b7e-4461-8dbe-a1322097d6ed" SearchSteps="Selector, FuzzySelector" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
