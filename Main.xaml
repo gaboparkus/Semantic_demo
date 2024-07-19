@@ -1,0 +1,1097 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1243.3333333333333,7580.666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main sequence" sap:VirtualizedContainerService.HintSize="692,7516" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Cortex Edge" sap:VirtualizedContainerService.HintSize="630,7428" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,7068" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="aa311157-8fae-4348-8817-2e224d5497d7" CvElementArea="674, 52, 23, 25" CvTextArea="677, 55, 16, 18" CvType="Icon" DesignTimeRectangle="675, 55, 20, 18" DesignTimeScaleFactor="0.6666666865348816" ElementType="Button" FullSelectorArgument="&lt;java cls='JButton' idx='2' role='push button' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;java cls='JButton' role='push button' /&gt;" Guid="f7b6f24f-7358-4040-bd50-1118dc5e6380" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAB0SURBVEhLY5DQC/tPSzxqAUGM1wIQIEYMH6aKBdjEYBinBcgAXRyZj0sMhgfOAmUNXbBGEI0sDgLIfFxiMDxwcQDC2DQSKwbDFFuADJDFYXjwW4ArMcDw4IoDZIAujsxHxoPLAlIyHwwPbBxQAw91C8L+AwCvmNQ+NazD7gAAAABJRU5ErkJggg==" InformativeScreenshot="bca5ce715a068f48248f70c7196c490e.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="679, 5, 16, 16" ElementType="Button" FullSelectorArgument="&lt;java cls='JButton' role='push button' /&gt;" FuzzySelectorArgument="&lt;java cls='JButton' role='push button' /&gt;" Guid="ab1cd882-a03a-43ac-adfd-b013b2d33bb3" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Authoring'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="33, 35, 61, 18" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Authoring' role='label' /&gt;" FuzzySelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Authoring' role='label' check:text='Authoring' /&gt;" Guid="62dcca78-a7ef-472a-a445-477e020d8c46" InformativeScreenshot="cbf73e5d2dc1a9c48a43d21ca92772ab.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="055d704c-f27e-4a70-8fff-909e0ae2bc5f" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_6" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'Author'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="2699f928-ce5a-4225-b38f-b5b1d108e638" CvTextArea="285, 46, 105, 12" CvType="AnyWordGroup" DesignTimeRectangle="285, 46, 105, 12" DesignTimeScaleFactor="1" ElementType="Text" Guid="bf037f8d-6459-439a-80b9-887fcbc350f8" InformativeScreenshot="dd7d318da2b8b00512685721c92590e8.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="2699f928-ce5a-4225-b38f-b5b1d108e638" CvTextArea="308, 79, 42, 12" CvTextArgument="Author:" CvType="Text" DesignTimeRectangle="308, 79, 42, 12" ElementType="Text" FullSelectorArgument="&lt;java name='Author Information' role='panel' /&gt;&lt;java name='Author:' role='label' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;java name='Author Information' role='panel' /&gt;&lt;java name='Author:' role='label' check:text='Author:' /&gt;" Guid="3e28a808-f774-4bb2-8f26-60630a3d1974" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID0" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_6">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Author Information"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CORTEX EIP'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="33, 53, 69, 18" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='CORTEX EIP' role='label' /&gt;" FuzzySelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='CORTEX EIP' role='label' check:text='CORTEX EIP' /&gt;" Guid="c1bc2a50-b7ce-4d62-82ee-36bad9fa7162" InformativeScreenshot="42d5b81950fe0406f5858dd07c59be4f.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="bec11217-7f7f-4c06-93da-c8927375d97d" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_7" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'label'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="279, 44, 519, 115" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java name='CORTEX EIP Server' role='panel' /&gt;" FuzzySelectorArgument="&lt;java role='panel' /&gt;" Guid="83dd66f4-da98-4066-8d1c-f9eb42cbd9aa" InformativeScreenshot="eeb85bda2172f1231385b72419998e2a.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="13fc61b0-1169-4d44-9a97-ad2a6938fce9" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID1" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_7">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID1}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["CORTEX EIP Server"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Coordinates System'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="51, 89, 166, 18" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Data Formats' role='label' /&gt;&lt;java name='Coordinates System &amp;amp; Format' role='label' /&gt;" FuzzySelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Data Formats' role='label' /&gt;&lt;java name='Coordinates System &amp;amp; Format' role='label' check:text='Coordinates System &amp;amp; Format' /&gt;" Guid="7686763d-dc24-41b7-9fcb-483ec6aeb46c" InformativeScreenshot="29bf4fe6f7b81722dc700ed7a3981c1c.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="7a113583-7b41-46fe-8f2d-b4fd0503c475" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_8" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'filler'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="279, 44, 269, 16" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;java name='Select a coordinate system, and a format if needed:' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='label' /&gt;" Guid="01b461b2-f986-4dd5-8ac2-3129433f9334" InformativeScreenshot="789c69252d614c9f74d35e28b9a1e1bf.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="279, 236, 519, 309" FullSelectorArgument="&lt;java cls='Filler' idx='7' role='filler' /&gt;" FuzzySelectorArgument="&lt;java cls='Filler' role='filler' /&gt;" Guid="46213c8e-ea31-4c25-81ae-89843432c886" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID2" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_8">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID2}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Select a coordinate system, and a format if needed:"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Date Time Formats'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="51, 107, 106, 18" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Data Formats' role='label' /&gt;&lt;java name='Date Time Formats' role='label' /&gt;" FuzzySelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Data Formats' role='label' /&gt;&lt;java name='Date Time Formats' role='label' check:text='Date Time Formats' /&gt;" Guid="2d9045a5-cbac-4059-9210-671e3ac2cf6d" InformativeScreenshot="8d9ca5ecf6022295c544af6b9525a569.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="7a207c81-6aed-45be-98f9-1479aab72570" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_9" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'label'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="279, 44, 574, 58" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java name='Duplicate Timestamps' role='panel' /&gt;" FuzzySelectorArgument="&lt;java role='panel' /&gt;" Guid="b8bacde1-9d1a-4f3f-8896-67be4eba526e" InformativeScreenshot="937e35df78c740f2d3c4f948eee53038.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="aaa729d7-14c9-473d-95f3-734074180e36" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID3" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_9">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID3}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Duplicate Timestamps"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Distance'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="51, 125, 52, 18" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Data Formats' role='label' /&gt;&lt;java name='Distance' role='label' /&gt;" FuzzySelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Data Formats' role='label' /&gt;&lt;java name='Distance' role='label' check:text='Distance' /&gt;" Guid="dfd7bdf2-3a61-4d58-8b06-5991a6ce3e37" InformativeScreenshot="f16fc28b5aaedd0d397a5869eedf4429.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="7ab67b79-c256-4423-b8a5-3fbc57bfc8a5" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_10" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'label'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="269, 34, 539, 521" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java cls='PrefPanel' hasTableAncestor='0' idx='3' role='panel' /&gt;" FuzzySelectorArgument="&lt;java cls='PrefPanel' hasTableAncestor='0' role='panel' /&gt;" Guid="a9c02239-08c4-4d51-b11b-c382c6b42a8b" InformativeScreenshot="5bc159f7dd76ee03b4323b109fe030d4.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='735' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="3ef02458-7243-4dc9-ac83-63a74c0f33e3" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID4" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_10">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID4}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Preferred unit for display and entry:"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Elevation'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="51, 143, 55, 18" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Data Formats' role='label' /&gt;&lt;java name='Elevation' role='label' /&gt;" FuzzySelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Data Formats' role='label' /&gt;&lt;java name='Elevation' role='label' check:text='Elevation' /&gt;" Guid="e8ad3ebf-3f3a-4ffb-908a-689b6fad0249" InformativeScreenshot="efe9b661bc35124f0bbbdfce7dc31402.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="d8a921f7-d45e-48f8-8cfe-30282537bd11" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_12" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'label'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="269, 34, 539, 521" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java cls='PrefPanel' hasTableAncestor='0' idx='3' role='panel' /&gt;" FuzzySelectorArgument="&lt;java cls='PrefPanel' hasTableAncestor='0' role='panel' /&gt;" Guid="474f29ac-7387-467d-a3ff-31299cc4f0ef" InformativeScreenshot="5bc159f7dd76ee03b4323b109fe030d4.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='699' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="acfa225b-6e45-41b2-a20b-aede2e9018c5" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID5" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_12">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID5}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Preferred unit for display and entry:"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Developer'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="a2525750-5c13-4c80-b086-712d1e5aba54" CvTextArea="34, 164, 55, 15" CvTextArgument="Developer" CvType="Text" DesignTimeRectangle="33, 161, 60, 18" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Developer' role='label' /&gt;" FuzzySelectorArgument="&lt;java cls='JTree' role='tree' /&gt;&lt;java name='Developer' role='label' check:text='Developer' /&gt;" Guid="eb9baf90-7e84-4bff-9551-c1fa29c18fe9" InformativeScreenshot="fae3eb7e4cf5aa4b30521a309f205ff4.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='710' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="5725ea54-cc7e-43fa-ae18-3b1c6b0418ca" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_13" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'label'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="269, 34, 539, 521" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java cls='DeveloperPreferencePanel' hasTableAncestor='0' role='panel' /&gt;" FuzzySelectorArgument="&lt;java cls='DeveloperPreferencePanel' hasTableAncestor='0' role='panel' /&gt;" Guid="358f994b-f8a6-478f-8ad3-6b3d960a2155" InformativeScreenshot="eecd3f6e24c997510ee4c65e91d487ac.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='706' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="108c649e-156d-4b7a-952e-b63f428a3179" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID6" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_13">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID6}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Debug Settings"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="cc4bf09a-7ad4-4c9f-8917-d82269449326" CvElementArea="456, 564, 73, 23" CvTextArea="473, 570, 37, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="454, 563, 76, 26" DesignTimeScaleFactor="0.6666666865348816" ElementType="Button" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Cancel' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Cancel' role='push button' check:text='Cancel' /&gt;" Guid="795d9537-3d72-42a7-aacd-f84183dfad89" InformativeScreenshot="2af4c94306bae9c213cf3ea9ee8d42aa.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="43, 1, 724, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='706' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='label' /&gt;" Guid="2f821599-18f8-48c8-9dd1-10b5a8514354" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Networks'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="0ec831cb-ff87-4eb8-b30b-eecfc34a9206" CvElementArea="0, 78, 66, 32" CvTextArea="7, 88, 51, 12" CvTextArgument="Networks" CvType="Button" DesignTimeRectangle="0, 78, 66, 32" DesignTimeScaleFactor="0.6666666865348816" ElementType="TabPage" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' check:text='Networks' /&gt;" Guid="9996f05e-a837-444f-aa3c-bb5fc5490b20" InformativeScreenshot="111dbb7f998851114ad40ef1300d96fc.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0ec831cb-ff87-4eb8-b30b-eecfc34a9206" CvTextArea="72, 88, 64, 12" CvTextArgument="CORTEX EIP" CvType="Text" DesignTimeRectangle="66, 78, 78, 32" ElementType="TabPage" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='CORTEX EIP' role='page tab' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='CORTEX EIP' role='page tab' check:text='CORTEX EIP' /&gt;" Guid="00216ef2-a0c6-47ba-85d1-4a6d3d02b815" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Open…'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="0ec831cb-ff87-4eb8-b30b-eecfc34a9206" CvElementArea="73, 117, 89, 25" CvTextArea="108, 123, 39, 15" CvTextArgument="Open..." CvType="Button" DesignTimeRectangle="72, 116, 92, 26" DesignTimeScaleFactor="0.6666666865348816" ElementType="Button" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='Open…' role='push button' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='Open…' role='push button' check:text='Open…' /&gt;" Guid="aa572170-b78f-4048-8704-936494c54a47" InformativeScreenshot="19bf4a1cacfdee87860285cf754b83f5.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0ec831cb-ff87-4eb8-b30b-eecfc34a9206" CvTextArea="7, 121, 45, 16" CvTextArgument="+ New" CvType="Text" DesignTimeRectangle="4, 116, 66, 26" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' check:text='New' /&gt;" Guid="267196cb-97a1-4ec9-8382-93047229aef4" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="141440d2-f31a-4213-9e26-02d8943b4dc8" CvElementArea="429, 320, 73, 23" CvTextArea="447, 325, 37, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="429, 320, 76, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;java name='Cancel' role='push button' /&gt;" FuzzySelectorArgument="&lt;java name='Cancel' role='push button' check:text='Cancel' /&gt;" Guid="3101214b-d223-48e8-b54c-ba1321462448" InformativeScreenshot="bc52cedc72e840ba045e7cc5dc5f02da.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtDialog' title='Select the SAR File to Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="23, 303, 482, 43" FullSelectorArgument="&lt;java cls='JPanel' idx='10' role='panel' /&gt;" FuzzySelectorArgument="&lt;java cls='JPanel' role='panel' check:fulltext='Open Cancel' /&gt;" Guid="f35c89fa-0dde-40eb-acb3-ca7f3864db93" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ArrowButton'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="ec8c788c-62db-44b7-8fdb-ab00f413dd83" CvElementArea="55, 121, 14, 16" CvType="ArrowButton" DesignTimeRectangle="55, 119, 15, 18" DesignTimeScaleFactor="1.5" ElementType="ArrowButton" Guid="a0115ffd-768a-42ca-aab5-f4b332448187" InformativeScreenshot="07b309c8cf95f77297c7f193f2e8ed15.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="ec8c788c-62db-44b7-8fdb-ab00f413dd83" CvElementArea="0, 79, 66, 30" CvTextArea="6, 87, 52, 13" CvTextArgument="Networks" CvType="Button" DesignTimeRectangle="0, 78, 66, 32" ElementType="TabPage" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' check:text='Networks' /&gt;" Guid="4db11a39-5948-4e6a-baf6-a9813d0a0b65" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'Standard Ontology'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="5, 145, 195, 23" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' /&gt;&lt;java name='Standard Ontology (Default)' role='menu item' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' /&gt;&lt;java role='menu item' /&gt;" Guid="fe1838a5-4525-4877-8e42-73edfe125b73" InformativeScreenshot="0de599af47350efc53be069005e85542.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="ad36f393-1a00-48b7-98fa-b5191ae75390" CvElementArea="73, 117, 89, 25" CvTextArea="108, 123, 39, 15" CvTextArgument="Open..." CvType="Button" DesignTimeRectangle="72, 116, 92, 26" ElementType="Button" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='Open…' role='push button' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='Open…' role='push button' check:text='Open…' /&gt;" Guid="b199ccfe-d4b6-4913-8fdd-186485db966b" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID7" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_2">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID7}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Standard Ontology (Default)"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_3" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'Minimal'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="25f95290-36a6-4320-a85a-02914efc3913" CvTextArea="32, 173, 45, 12" CvType="AnyWordGroup" DesignTimeRectangle="5, 168, 195, 23" DesignTimeScaleFactor="0.6666666865348816" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' /&gt;&lt;java name='Minimal' role='menu item' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' /&gt;&lt;java role='menu item' /&gt;" Guid="172b6715-8aa0-4121-afc3-088fced6b809" InformativeScreenshot="672860ef0662c965b71e2d2114e4dc8b.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="25f95290-36a6-4320-a85a-02914efc3913" CvTextArea="32, 150, 150, 14" CvTextArgument="Standard Ontology (Default)" CvType="Text" DesignTimeRectangle="5, 145, 195, 23" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' /&gt;&lt;java name='Standard Ontology (Default)' role='menu item' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' /&gt;&lt;java name='Standard Ontology (Default)' role='menu item' check:text='Standard Ontology (Default)' /&gt;" Guid="2bf3b99e-0164-4f86-86ff-525fd1d8c587" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID8" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_3">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID8}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Minimal"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="73087795-f7be-46b3-a47a-aa418ea77823" CvTextArea="6, 120, 44, 16" CvTextArgument="+ New" CvType="Text" DesignTimeRectangle="4, 116, 66, 26" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Networks' role='page tab' /&gt;&lt;java name='New' role='menu' check:text='New' /&gt;" Guid="3f46b33c-9cd1-49d2-8e92-3fa5f16fe69f" InformativeScreenshot="dc29d27536e9d8f36f6bb55fae0d647b.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="73087795-f7be-46b3-a47a-aa418ea77823" CvTextArea="72, 87, 64, 13" CvTextArgument="CORTEX EIP" CvType="Text" DesignTimeRectangle="66, 78, 78, 32" ElementType="TabPage" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='CORTEX EIP' role='page tab' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='CORTEX EIP' role='page tab' check:text='CORTEX EIP' /&gt;" Guid="eeef77ea-538a-4351-bc47-9e378dc2889b" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_4" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'File'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="3201e40b-7879-4ba4-8b01-6453af8a72c8" CvTextArea="31, 45, 57, 15" CvType="AnyWordGroup" DesignTimeRectangle="13, 34, 92, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;java cls='JToolBar' hasTableAncestor='0' idx='19' role='tool bar' /&gt;&lt;java name='Entity' role='toggle button' /&gt;" FuzzySelectorArgument="&lt;java cls='JToolBar' hasTableAncestor='0' role='tool bar' /&gt;&lt;java role='toggle button' /&gt;" Guid="060ebfc3-bc9f-40a0-b132-2af7badacf43" InformativeScreenshot="106ff988420df80b23d8f309f20105d7.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge - &amp;lt;Untitled&amp;gt;' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="3201e40b-7879-4ba4-8b01-6453af8a72c8" CvTextArea="49, 9, 21, 13" CvTextArgument="File" CvType="Text" DesignTimeRectangle="43, 1, 34, 30" FullSelectorArgument="&lt;java hasTableAncestor='0' name='File' role='menu' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='File' role='menu' check:text='File' /&gt;" Guid="561f5f0e-ffe1-4727-9d2c-c55d9c423f39" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID9" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_4">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID9}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Entity"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Maximize'" sap:VirtualizedContainerService.HintSize="534,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="771e7cd5-472d-4be2-8eec-2b263b59b23d" CvElementArea="1137, 5, 20, 20" CvType="MaximizeButton" DesignTimeRectangle="1125, 1, 44, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Maximize' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Maximize' role='push button' check:text='Maximize' /&gt;" Guid="85abefb2-2556-43f9-8e5f-835f0e687a16" InformativeScreenshot="a33aafa4748ab661850a3884b13d3ae0.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge - &amp;lt;Untitled&amp;gt;' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="771e7cd5-472d-4be2-8eec-2b263b59b23d" CvTextArea="544, 9, 134, 13" CvTextArgument="Cortex Edge - &lt;Untitled&gt;" CvType="Text" DesignTimeRectangle="255, 1, 826, 30" ElementType="Text" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Cortex Edge - &amp;lt;Untitled&amp;gt;' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Cortex Edge - &amp;lt;Untitled&amp;gt;' role='label' check:text='Cortex Edge - &amp;lt;Untitled&amp;gt;' /&gt;" Guid="bb2c0755-b192-497e-b1a8-425ef8016766" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,301.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_5" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text '1 view Entity'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="990, 449, 314, 194" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;java cls='JTextPane' role='text' /&gt;" FuzzySelectorArgument="&lt;java cls='JTextPane' role='text' /&gt;" Guid="19ffadc3-0a7e-4dc7-b23c-abdcf8c1edd2" InformativeScreenshot="20a9dce13bef8a6f2cb07bdadcc64521.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge - &amp;lt;Untitled&amp;gt;' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="c1d2dda1-59e6-48f1-9cf8-9d4002a10dc8" CvTextArea="417, 82, 96, 19" CvTextArgument="1 view Entity" CvType="Text" DesignTimeRectangle="391, 76, 1513, 28" FullSelectorArgument="&lt;java cls='JPanel' idx='26' role='panel' /&gt;" FuzzySelectorArgument="&lt;java cls='JPanel' role='panel' check:fulltext='1 view Entity' /&gt;" Guid="6cd10e11-a344-4a5d-8c66-2aacc2ae8d5b" SearchSteps="Selector, FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID10" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_5">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID10}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Entity Workspace"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="534,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="41ae6bdd-378b-46d3-b10d-180bfb1089b1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="c1d2dda1-59e6-48f1-9cf8-9d4002a10dc8" CvElementArea="1897, 11, 20, 19" CvType="CloseButton" DesignTimeRectangle="1887, 11, 44, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Close' role='push button' check:text='Close' /&gt;" Guid="45223456-93be-4880-ba22-727116bc4960" InformativeScreenshot="7b92eddf2c04233a74efac33b13ff5bb.png" ScopeSelectorArgument="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge - &amp;lt;Untitled&amp;gt;' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1399, 269, 700, 500" FilePath="C:\Users\gpere\AppData\Local\Semantic AI\semantic ai.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAtOSURBVFhHrVcJPNXpGv7nbBzk4Fgre6kOt2aammraJtUUbWrahEiKtCkhimMrtClkmQjRCGWrLBVJlmxjaeMkirIltEmp537nOHO7s9y5ze/e5/d7f985/++c93m/732/5/3+1JdCdY6rFmeOq5XCPPdozkLPW/ImvgL5pQdb5ZcdbFVYeqhBYYlfAdfYN4y70HOtljFfVfy3/x0q85ynys/bHyu32K+bsyoIipbh4NpEQ3lzLJTt46CyNQEqDglQJqPS5hhwrSKhtDbombKpf8goUz8DsZu/D71F+5RU5rmdlF3s/07OIhIK9ueg5HgBqnvTob7vEtTdszDCIxsjPHMxkn9VNI7wyIX6/myoumSA6/AzFNcH96guO+g1aQmfLXb7ZRhrcmCSnJFHrcyaUHC2ngd3bwZU3LOh7p2Hkf43oRFYDM2jpdAKKoP2iXJiFSLTCionz29jFJkf4VsAFddLUNgYDbUVhwt1VvqMFrv/a4xf7GEkbeTZIWN+GvI7U6HkngtV7wKMOFwKjeOV0A6tgW5EHfRO38PoMw8wJqZeZKPPEIuuJ88fQDviLjSDf8HIgCKokp2SJUEwFng/nGx7jCem+XOY2J+YxJ6zv4ttHgkOIVfcfw2qB8lqgiqhEVoHnZ/uY3TsQ+gnNGFc4mPwUlrAu9AKgwtPyfgU48n3sUlPMCahGbpnBNAIqQbH6wYm+OViw8mrWOkW17jQLkxLTPdbGFmGKHJmu95lrTgJjkMyFF2zoeJ7C+rHK6ARfhc6xKHQ8bikFhikPoNBRjsMLncMWZZ4JMZL78DYlGcYFd8MhdA7sMtsRPvLdyhv7saJy9Xwjb6adyY/X1JM+xnaRvtCaD/4QdYmDvKO6VDyyINa4G1oBNdAJ6oeOmcfQfPnFmgkP4MmIde81A6Ny23QutIO7ctDpkk+a2a2YXxGB1Zc78SFh334FdMD80At9obc4kPIv/3ARUw7hK+Wun/DnOY8ILUmDHJ256HgnAUVn5tQP1oB5eA6KP9Uj6+Tn8CysBsBd18h/slbnHv8BscaXmNrVS82lL/ApooeeN19iQQyV9D5DnW9H1D7YgA1nW/R2z+Ix91vkVrxGCmF99HU2v3cPeSyppieotSmO8bRjHwgbRENuW0XwHXLgYL3TXACyjD/vADxD/rQ/W5QvJb/jNvdA+DfeQnjW92YmN2JMSmt0IsRYFpMHbal3UPIDQGOZPwCo52kwKfv8hWR68zYqcGYtKtHctkxyFjFgLPjIqScsqB3pBRxtZ0ix+1vBxHb8Ap2ZT1YQpwbF3ah+PmAaE6IFjJvX9kDvayhtIzJ7sB4Yry0Nuife4RRodVkQflgb08Gc10Y6D/4QH6m00P975xlKc6ETdb0ac5grzwBWRIAfUsSpgfdwiOyZS8HPmJfIanwBOIksQVaJPfKGW0YR4h+6XkvIr/T9wGzbnRh1KU28AipYQ4pRrHxyO9HkwDUQmqg4FMAGcdUMMkJYy32B3vGXqjNclxAyRpujqbPdBcFQFsfhQn8K3jW249GEsDU07VQOFkN3biH0E1qhQZxaFryArW9Q+T9g5+wrvQFFNNIYYoLUmi/FqheehtmXnyCTdnNCLjZjIjCRvikVmHGnjgMm7Ib6jMdvSj6uE3FjNkHwFx+HAzzKOTUPRM5nxdZDsrtGlSCq6F/tgGrr3cgpaUfn0Szn9Hx7iPSnvbD+95LOJCCFKbCqaYXwYLXyGvrx6v3H8W//Iy3A+9h4ZEAapx1GiUxxkbAJAEMMw7E6G3x+PRpiCLjbgcCCx8j8d5zNPa9Ez0T4vWHT2h+8wFNrwfRQ1L039BHArwkeAHfvCbsSqpCYslD0fOq+y2gG9hWUxL6m1rpM9zAWBQA2bVhSC9v+sMqqzve4GRNN8wKOjArrwuTrnXi66udmJHfBYuyF0hseSsK7N/RSYgDa3sx9fwjqARVQI6fBxYROLZFBJq7+lDf1A6pCZsFZAc2tjCmuUCSiBBreRDkLKMwPyAX5lGlWBZdjilh5dA6VYURp4kakmLUT3tKirAT43I6oU+KToMIkBoRn/yOz7t0q2sAs8m8OlFDrSjSG0ijGuWbB4btOcz1ShctMCqtGJTOmgZKQndDPf0bR7DmeoK99AjYa0+BaRkN1pafMdwpE6rkj1pBtzEmsgY8UguGSc0wzCRSLJRfUunqpOAOPXiJj+INKH3+HrzMDugkk0ATGqEXeYcoaglYezIw3S8Lj7te4kXfG+ib+pIA1ldSLF2LmxITtoHxnRukFh6EDDkNHMtIcO3JRcMpFeoeOdD0L4Quabv6kbUkiHoYJjaBl9oCdSI024kCDvzKTuBKvsvEPsGIuCYohd8H90gFDI4Xwzf7PvoHBjHw/gOWusaBGr8RrLEbkinZsVbhw8ZtBv1bJ7DmeEDKmNTCqmDIW0eRS0Ui1JzTMZJcNrQCCqF3sgx64TUYGXEHOjEN8KvqxsDvct9IdMGnohvbb7TDq6gNaQ+6SSF+EM3daenGbCdS/d86gmGwBUoTbfdRXJ71OkpvAyh9YoY2oL5zAWXkBWrJUbDMIjF8Szw4jhfBcb0COc9rGHm4BGapAlSQwvxSCDpfwS25CopWp0HN9YbU9L2gj7f9pDbZYRY12Xiv6jAts44ZZgEITylCBmkWZ3NrsS00F1OdE2HolIRJHplYduoWjt9oREVLH7peD+A2GeNqOnGs5Cn8S54hvLIT2Y29qGp/g8q218gW9OBEcQtMz1SKrnGU2WlIrQgCex4fDCJC7Cm760ZOc5QS9QOj1V4h70luWjt6UHnnMd72Dynd4OBHvBF/FspD3r02bI6vAM8/H0peeaLLhpxvITiHioiVgOtfCvXDt0nRlULOqxAs51ywdqZDdksihq+PAHvJYUjO94bErANQXHTQWUQuRH5x7djgmNxXlKY5ScUmKM7ch6zi+yJiIcoa2jCXT3R8wxkwyVESpkR431MlF1A1z+tQ98kjlk9a+A0SWD64/Hwoul+Dwl6Stm0poh7D/jEELNLw6MaHwVoa1KJnHa0kph9CTNINL0p5EShlE1Baq3A+p0pEnlJwF5ImAaBMAskqwiFvcwYKdgngbkuC0q6L4Dqlg+ucCa7LZWJZUCSm4HwFnD2ZGO6QAhmbeEiSHsNaHQ7mqjAMWxUJ3e3nbcW0n0G4pHMKqouOnL6CirpmEXluyX2wZ7uDIkopbeIPadPjkF0dguHmEZCzJq1701nIk+u6/NYkyJOVCm24cMVbkyGz5TzYNgmQsowD0yJWZJQleX/YkZ7M5/MlxLS/hUDQoRsem/0oNqkAVs5RoBtuJSfDHszpLmDOOUDU0hdSiwMhveI4pFeFQnpdBGQtoiBDUiNjFSsyaWJs6zhIWceDSYxhlQCGTRKGbU6FrFNuxVcHb/52638Pjcm2PEppQQOlSlIxZiNpGPaQmLhdpBNCsWLO9RLJtiRJidTSY5A0PQHJlSGQ+jEUkqvDwFpD+r157L+I6XapkNieBbZrQYW2b9Hna9hfQdlgg66svuV1Ssscw0gQNAM7CNWSNmkX6FPJGRY2r+89wZznA8Z8PzAXHgLT5AgYy0PAWPsT6JZnQbNNAc3hMuh78oh+lCbqHi5SFrv/MvB4q5gkCBe69vo20i8gMdYWNJISiYk7QPtmN2jf7oXEVBfQZriD9r0PaCZHQfsxHHSLs+RWdRH0HTlgut5qkvMq+2PB/R2oTrTTkhm93oeubVZPI4pJ2rdoR2j/cBgKZOYB0BcGgmZ6aojcPv0Tc/f1aim3Ihdpftn/7y1ZQW/9cJb2mgWSOmZ8uo55KtmRatoUJwF9rk8DfXlwJcM8Lom5JXWf5J6cWRT/T148/hQU9U/u91OYPcoEvwAAAABJRU5ErkJggg==" InformativeScreenshot="76652f527afd0d6e2428da859efd6222.png" Selector="&lt;wnd app='semantic ai.exe' cls='SunAwtFrame' title='Cortex Edge' /&gt;" Title="Cortex Edge" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
